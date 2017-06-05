@@ -76,7 +76,7 @@ module.exports.component = {
 
 			// This regex replacement is for Chinese(or japanese) can't be break by space like English, 
 			// and English should keep wrap by space properly
-			var words = text.replace(/([\u4E00-\u9FCC])|((\w+)\s)/g,`$&\n`).split(/\n/);
+			var words = text.replace(/([\u4E00-\u9FCC])|((\w+)\s)/g,"$&\n").split(/\n/);
 
 			var line = "";
 
